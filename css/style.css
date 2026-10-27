@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  color: #94a3b8;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Source Sans;
+  font-size: 15px;
+  color: #4d5592;
+  background: #0f172a;
+  overflow: auto;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 95%;
+  justify-content: center;
+}
+header {
+  width: 100%;
+  height: 50px;
+}
+.main {
+  width: 80%;
+  height: 100%;
+  background-color: black;
+  border-left: 1px solid #3d444d;
+  border-right: 1px solid #3d444d;
+  box-shadow: 5px 5px 5px black;
+}
+
+.topbar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 0, 87);
+  color: white;
+  height: 50px;
+  width: 100%;
+  z-index: 100;
+}
+
+.topbar-text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  width: 90%;
+  height: 100%;
+  min-height: 40px;
+}
+
+.topbar-icon {
+  position: relative;
+  background-color: inherit;
+  min-width: 50px;
+  width: 5%;
+  min-height: 50px;
+  height: 100%;
+}
+
+.topbar-dropdown-button {
+  width: 50px;
+  height: 50px;
+  background-color: inherit;
+  color: #06b6d4;
+  border: none;
+  cursor: pointer;
+}
+
+.topbar-svg {
+  width: 40px;
+  height: 40px;
+}
+
+.topbar-menu-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 87);
+  height: 95%;
+  width: 15%;
+  min-width: 200px;
+  transform: translateY(50px);
+  align-items: center;
+  z-index: 100;
+}
+
+.topbar-menu-buttons {
+  width: 100%;
+  height: 80%;
+}
+.topbar-menu-info {
+  width: 100%;
+  height: 20%;
+}
+.topbar-menu-info-header {
+  font-size: 25px;
+  margin-left: 5px;
+}
+.topbar-menu-info-content {
+  font-size: 20px;
+  margin: 5px;
+}
+
+.topbar-menu-button {
+  height: 5%;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.topbar-menu-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: black;
+}
+
+.topbar-account-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #021b79, #0575e6);
+  transform: translate(-75%);
+  width: 350%;
+  height: 500%;
+  margin: 0;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid #3d444d;
+  box-shadow: 5px 5px 2px;
+  z-index: 100;
+}
+#nameplate {
+  font-size: 20px;
+  color: white;
+}
+
+#topbar-account-buttons {
+  width: 100%;
+  height: 30%;
+}
+.topbar-account-button {
+  height: 30%;
+  width: 90%;
+  background-color: lightgray;
+  border: 1px solid #3d444d;
+  color: black;
+  border-radius: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.main-page-slider {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 40%;
+  width: 100%;
+  justify-content: center;
+}
+
+.main-page-slide {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slider-slide {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-slide img {
+  height: 100%;
+  width: 100%;
+  animation: slide 0.5s linear;
+}
+
+.slider-button {
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.slider-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#slider-button-left {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+#slider-button-right {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.dropdown {
+  position: absolute;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.icon {
+  min-width: 50px;
+  min-height: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.profile {
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+
