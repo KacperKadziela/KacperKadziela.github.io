@@ -17,3 +17,11 @@ function dropdown(BoxID, ButtonID) {
     Box.classList.toggle("hidden");
   });
 }
+
+function authHandle() {
+  if (sessionStorage.getItem("auth") == null) {
+    return false;
+  } else {
+    return true;
+  }
+}
