@@ -1,5 +1,5 @@
 if (!authHandle()) {
-  window.location.href = "../src/login.html";
+  window.location.href = "../login.html";
   alert("Musisz być zalogowany/a");
 }
 $("#console-button").click(() => {
@@ -29,9 +29,9 @@ $("#console-button").click(() => {
 });
 
 $("#resource-button").click(() => {
-  loadContent("../src/snippet/resources.html", "#panel-right");
+  loadContent("../snippet/resources.html", "#panel-right");
 });
 
 $("#file-button").click(() => {
-  loadContent("../src/snippet/filemanager.html", "#panel-right");
+  loadContent("../snippet/filemanager.html", "#panel-right");
 });

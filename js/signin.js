@@ -1,6 +1,6 @@
 if (authHandle()) {
   alert("Jesteś już zalogowany: ");
-  window.location.href = "../src/panel.html";
+  window.location.href = "../panel.html";
 }
 
 function processForm(formData) {
@@ -93,7 +93,7 @@ $("#register-form").submit(async function (e) {
     });
     localStorage.setItem("users", JSON.stringify(users));
     sessionStorage.setItem("auth", data.login);
-    window.location.href = "../src/panel.html";
+    window.location.href = "../panel.html";
   }
 });
 
@@ -127,7 +127,7 @@ $("#login-form").submit(async function (e) {
     if (hash === user.password) {
       console.log("wth");
       sessionStorage.setItem("auth", data.login);
-      window.location.href = "../src/panel.html";
+      window.location.href = "../panel.html";
     } else {
       console.log("wtf");
       $("#input-error").html(
@@ -168,6 +168,6 @@ $("#reset-form").submit(async function (e) {
     user.password = hash;
     let updatedJson = JSON.stringify(users, null, index);
     localStorage.setItem("users", updatedJson);
-    window.location.href = "../src/login.html";
+    window.location.href = "../login.html";
   }
 });

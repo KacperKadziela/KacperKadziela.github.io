@@ -2,22 +2,28 @@
 <html lang="PL">
   <head>
     <title>Hosting</title>
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
-    <link rel="stylesheet" href="../css/offer.css" type="text/css" />
-    <script src="../js/jQuery.js"></script>
-    <script src="../js/util.js"></script>
-    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/indexoffer.css" type="text/css">
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/util.js"></script>
+    <meta charset="UTF-8">
   </head>
 
   <body>
     <header id="topbar"></header>
-    <script src="../js/topbar.js"></script>
+    <script src="./js/topbar.js"></script>
     <main>
       <div class="main">
-        <h1>OFERTA</h1>
+        <div id="slider" class="main-page-slider">
+          <div class="main-page-slide">
+            <div class="slider-button" id="slider-button-left">&lt;</div>
+            <div class="slider-slide" id="slide"></div>
+            <div class="slider-button" id="slider-button-right">></div>
+          </div>
+        </div>
         <div class="offer">
-          <div class="offer-wrapper">
-            <div class="offer-main" id="offer-start">
+          <div class="offer-card-background">
+            <div class="offer-card" id="offer-start">
               <div class="offer-header">Pakiet START</div>
               <div class="offer-content">
                 <ul>
@@ -29,10 +35,9 @@
                 </ul>
               </div>
             </div>
-            <div class="offer-button" id="start">Kup</div>
           </div>
-          <div class="offer-wrapper">
-            <div class="offer-main" id="offer-pro">
+          <div class="offer-card-background">
+            <div class="offer-card" id="offer-pro">
               <div class="offer-header">Pakiet PRO</div>
               <div class="offer-content">
                 <ul>
@@ -44,10 +49,9 @@
                 </ul>
               </div>
             </div>
-            <div class="offer-button" id="pro">Kup</div>
           </div>
-          <div class="offer-wrapper">
-            <div class="offer-main" id="offer-enterprise">
+          <div class="offer-card-background">
+            <div class="offer-card" id="offer-enterprise">
               <div class="offer-header">Pakiet ENTERPRISE</div>
               <div class="offer-content">
                 <ul>
@@ -63,11 +67,10 @@
                 </ul>
               </div>
             </div>
-            <div class="offer-button" id="enterprise">Kup</div>
           </div>
         </div>
       </div>
-      <script src="../js/offer.js"></script>
+      <script src="./js/index.js"></script>
     </main>
     <footer></footer>
   </body>

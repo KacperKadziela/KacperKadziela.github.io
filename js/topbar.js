@@ -1,4 +1,4 @@
-loadContent("../src/snippet/topbar.html", "#topbar").then(() => {
+loadContent("../snippet/topbar.html", "#topbar").then(() => {
   dropdown("topbar-menu-box", "topbar-menu-button");
   dropdown("topbar-account-box", "topbar-account-button");
   if (authHandle()) {
@@ -7,21 +7,21 @@ loadContent("../src/snippet/topbar.html", "#topbar").then(() => {
       '<button class="topbar-account-button" id="panel-redirect">Moje konto</button><button id="logout" class="topbar-account-button">Wyloguj się</button>',
     );
     $("#panel-redirect").click(() => {
-      window.location.href = "../src/panel.html";
+      window.location.href = "../panel.html";
     });
     $("#logout").click(() => {
       sessionStorage.removeItem("auth");
-      window.location.href = "../src/index.html";
+      window.location.href = "../index.html";
     });
   } else {
     $("#topbar-account-buttons").html(
       '<button class="topbar-account-button" id="signup-redirect">Zarejestruj się</button><button id="signin-redirect" class="topbar-account-button">Zaloguj się</button>',
     );
     $("#signup-redirect").click(() => {
-      window.location.href = "../src/register.html";
+      window.location.href = "../register.html";
     });
     $("#signin-redirect").click(() => {
-      window.location.href = "../src/login.html";
+      window.location.href = "../login.html";
     });
   }
 });
