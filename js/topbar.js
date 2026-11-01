@@ -1,4 +1,4 @@
-loadContent("../snippet/topbar.html", "#topbar").then(() => {
+loadContent("./snippet/topbar.html", "#topbar").then(() => {
   dropdown("topbar-menu-box", "topbar-menu-button");
   dropdown("topbar-account-box", "topbar-account-button");
   if (authHandle()) {
