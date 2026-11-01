@@ -1,0 +1,32 @@
+.offer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.offer-card-background {
+  background-color: white;
+  width: 280px;
+  height: 200px;
+  margin: 1%;
+  border-radius: 10px;
+}
+
+.offer-card {
+  background: linear-gradient(135deg, #021b79, #0575e6);
+  width: 280px;
+  height: 200px;
+  margin: 1%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.offer-card:hover {
+  opacity: 0.9;
+}
+
+.offer-header {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}

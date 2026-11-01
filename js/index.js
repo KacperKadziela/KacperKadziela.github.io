@@ -23,4 +23,8 @@ function nextImg() {
 $("#slider-button-left").click(prevImg);
 $("#slider-button-right").click(nextImg);
 
+$(".offer-card").click(() => {
+  window.location.href = "../src/oferta.html";
+});
+
 setInterval(nextImg, 1440);
